@@ -1002,7 +1002,7 @@ table { margin-bottom:15px; width:100%; border-collapse:collapse; border-spacing
 #accordionExample .title { margin:35px 0 20px; }
 #accordionExample .panel-title { cursor:pointer; font-family:Poppins,Helvetica,Tahoma,Arial,sans-serif; font-size:14px; text-transform:none; margin:0; background:none; padding:15px; border-top:2px solid #eee; display:block; color:#555; padding-left:30px; position:relative; }
 #accordionExample .panel-title.active { color:#000; }
-#accordionExample .panel-content { padding:1px 5px 15px 30px; }
+#accordionExample .panel-content { padding:1px 5px 15px 30px; text-align: justify; }
 #accordionExample .panel-title[aria-expanded="true"] { color:#000; }
 #accordionExample .panel-title[aria-expanded="false"]:before { content:"\e61a"; font-family:'themify'; display:inline-block; position:absolute; left:5px; font-size:14px; }
 #accordionExample .panel-title[aria-expanded="true"]:before { content:"\e622"; font-family:'themify'; display:inline-block; position:absolute; left:5px; font-size:14px; }
