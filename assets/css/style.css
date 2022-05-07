@@ -281,7 +281,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity:1; -ms-fil
 .search { position:absolute; width:100%; background:#fff; color:#333; z-index:100; box-shadow:0 2px 3px rgba(0,0,0,.1); -webkit-box-shadow:0 2px 3px rgba(0,0,0,.1); opacity:0; visibility:hidden;
 	transform-origin:top center; -webkit-transform-origin:top center; transform:translateY(-100%); -webkit-transform:translateY(-100%); transition:opacity .2s,transform .2s; -webkit-transition:opacity .2s,transform .2s; }
 .search--opened { opacity:1; visibility:visible; transform:translateY(0); -webkit-transform:translateY(0); -ms-transform:translateY(0); }
-.site-header__search .search-trigger { border:0; font-size:24px; padding-right:20px; cursor:pointer; padding-top:0; }
+.site-header__search .search-trigger { border:0; font-size:24px; padding-right:10px; cursor:pointer; padding-top:0; }
 .site-header__search .search-trigger:hover { color:#850c40; }
 .search .search__form { margin:35px 60px; position:relative; }
 .search .search__input { width:100%; border:0; font-size:18px; padding:0 40px; }
