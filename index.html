@@ -2522,7 +2522,8 @@
                     </div>
                     <div class="row px-3">
                         <label class="mb-1"><h6 class="mb-0 text-sm">Password</h6></label>
-                        <input type="password" name="password" placeholder="Enter password">
+                        <input type="password" name="password" placeholder="Enter password" id="txtPassword" >
+                        <p id="btnToggle" class="show-password">Show Password</p>
                     </div>
                     <div class="forgot">
                     <div class="row px-3 mb-4">
@@ -2606,6 +2607,23 @@
 			return false;
 		  });
 	</script>
+    <script>
+        let passwordInput = document.getElementById('txtPassword'),
+  toggle = document.getElementById('btnToggle');
+
+function togglePassword() {  
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    toggle.innerHTML = 'Hide Paswword';
+  } else {
+    passwordInput.type = 'password';
+    toggle.innerHTML = 'Show Password';
+  }
+}
+(function () {
+  toggle.addEventListener('click', togglePassword, false);
+})();
+    </script>
     <!--End For Newsletter Popup-->
 </div>
 </body>

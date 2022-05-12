@@ -1719,7 +1719,9 @@ button:focus {
     box-shadow: none !important;
     outline-width: 0;
 }
-
+.show-password{
+	margin-bottom:10px; font-weight: 600; cursor: pointer; color: #850c40;
+}
 .btn-blue {
     background-color: #850c40;
     width: 150px;
