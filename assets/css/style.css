@@ -1139,11 +1139,11 @@ table { margin-bottom:15px; width:100%; border-collapse:collapse; border-spacing
 .cart__image-wrapper a { display:block; }
 .cart .list-view-item__title { color:#000; font-size:1.15385em; min-width:100px; }
 .cart__image-wrapper { width:120px; }
-.cart .qtyField a { height:36px; line-height:34px; padding:0; }
-.cart .qtyField .cart__qty-input { height:36px; width:40px; float:left; }
-.cart .qtyField a .icon { line-height:33px; font-size:10px; }
-.cart .cart__remove { border:0; margin-top:4px; font-size:14px; padding:0; height:25px; width:25px; text-align:center; vertical-align:middle; line-height:25px; }
-.cart .cart__remove .icon { line-height:24px; }
+.cart .qtyField a { height:36px; line-height:34px; padding:0; margin-top: 10px; }
+.cart .qtyField .cart__qty-input { height:36px; width:40px; float:left; margin-top: 10px; }
+.cart .qtyField a .icon { line-height:33px; font-size:10px; margin-top: 10px;}
+.cart .cart__remove { border:0; margin-top:4px; font-size:14px; padding:0; color: red; height:25px; width:25px; vertical-align:middle; line-height:25px; }
+.cart .cart__remove .icon { line-height:24px; color: red; }
 .cart table tfoot .icon { vertical-align:middle; }
 .style2 .cart__footer .cart-note { margin-bottom:30px; }
 .cart__footer .solid-border { border:1px solid #e8e9eb; padding:20px; margin-bottom:20px; }
@@ -1154,7 +1154,7 @@ table { margin-bottom:15px; width:100%; border-collapse:collapse; border-spacing
 .cart__shipping { font-style:italic; font-size:13px; padding:12px 0; }
 .cart_tearm label { cursor:pointer; }
 input.checkbox { height:auto; vertical-align:middle; padding:0; box-shadow:none; }
-#cartCheckout { width:100%; padding:15px; }
+#cartCheckout { width:100%; padding:15px; background-color: #850c40; }
 .cart-variant1 .cart .cart__price-wrapper{ text-align:center; }
 .cart-variant1 .cart table { border:1px solid #f2f2f2; }
 .cart-variant1 .cart table td { border:1px solid #f2f2f2; }
@@ -1734,6 +1734,15 @@ button:focus {
     cursor: pointer;
 }
 /*---------------------------------------
-  Login Modal End ----------------------------
-  ---------------------------------------*/
+Login Modal End ----------------------------
+---------------------------------------*/
+
+/*---------------------------------------
+  Cart Page ----------------------------
+---------------------------------------*/
+
+
+/*---------------------------------------
+  Cart Page//// ----------------------------
+---------------------------------------*/
 
