@@ -461,25 +461,25 @@
 <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
 <!--headin5_amrc-->
 <ul class="footer_ul_amrc">
-<li><a href="http://webenlance.com">Image Rectoucing</a></li>
-<li><a href="http://webenlance.com">Clipping Path</a></li>
-<li><a href="http://webenlance.com">Hollow Man Montage</a></li>
-<li><a href="http://webenlance.com">Ebay & Amazon</a></li>
-<li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
-<li><a href="http://webenlance.com">Image Cropping</a></li>
+<li><a href="cart.html">Shopping Cart</a></li>
+<li><a href="checkout.html">Checkout</a></li>
+<li><a href="order-success">Order-sucess</a></li>
+<li><a href="#">Ebay & Amazon</a></li>
+<li><a href="#">Hair Masking/Clipping</a></li>
+<li><a href="#">Image Cropping</a></li>
 </ul>
 <!--footer_ul_amrc ends here-->
 </div>
 
 
 <div class=" col-sm-4 col-md  col-6 col">
-<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+<h5 class="headin5_amrc col_white_amrc pt2">Important Links</h5>
 <!--headin5_amrc-->
 <ul class="footer_ul_amrc">
-<li><a href="http://webenlance.com">Remove Background</a></li>
-<li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
-<li><a href="http://webenlance.com">Logo Design</a></li>
-<li><a href="http://webenlance.com">Vectorization</a></li>
+<li><a href="policies.html">Policies</a></li>
+<li><a href="refund.html">Cancellation/Refund</a></li>
+<li><a href="shipping.html">Delivery/Shipping</a></li>
+<li><a href="disclaimer.html">Disclaimer</a></li>
 <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
 <li><a href="http://webenlance.com">Image Cropping</a></li>
 </ul>
@@ -503,14 +503,6 @@
 
 
 <div class="container">
-<ul class="foote_bottom_ul_amrc">
-<li><a href="http://webenlance.com">Home</a></li>
-<li><a href="http://webenlance.com">About</a></li>
-<li><a href="http://webenlance.com">Services</a></li>
-<li><a href="http://webenlance.com">Pricing</a></li>
-<li><a href="http://webenlance.com">Blog</a></li>
-<li><a href="http://webenlance.com">Contact</a></li>
-</ul>
 <!--foote_bottom_ul_amrc ends here-->
 <p class="text-center">Copyright @2017 At Eduse Marketing Pvt Ltd | Designed By <a href="#">EduTech</a></p>
 
@@ -529,6 +521,7 @@
     <span id="site-scroll"><i class="icon anm anm-angle-up-r"></i></span>
     <!--End Scoll Top-->
     
+
     <!--Quick View popup-->
     <div class="modal fade quick-view-popup" id="content_quickview">
         <div class="modal-dialog">
@@ -675,7 +668,8 @@
                     </div>
                     <div class="row px-3">
                         <label class="mb-1"><h6 class="mb-0 text-sm">Password</h6></label>
-                        <input type="password" name="password" placeholder="Enter password">
+                        <input type="password" name="password" placeholder="Enter password" id="txtPassword" >
+                        <p id="btnToggle" class="show-password">Show Password</p>
                     </div>
                     <div class="forgot">
                     <div class="row px-3 mb-4">
@@ -758,6 +752,23 @@
             Cookies.set('promotion', 'true', { expires: 1});  
             return false;
           });
+    </script>
+    <script>
+        let passwordInput = document.getElementById('txtPassword'),
+  toggle = document.getElementById('btnToggle');
+
+function togglePassword() {  
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    toggle.innerHTML = 'Hide Paswword';
+  } else {
+    passwordInput.type = 'password';
+    toggle.innerHTML = 'Show Password';
+  }
+}
+(function () {
+  toggle.addEventListener('click', togglePassword, false);
+})();
     </script>
     <!--End For Newsletter Popup-->
 </div>
